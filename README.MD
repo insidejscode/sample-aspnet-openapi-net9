@@ -84,7 +84,9 @@ public class TargetController : ControllerBase
 
 
 * BearerSecuritySchemeTransformer class:
-(https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/customize-openapi?view=aspnetcore-9.0#use-document-transformers)
+
+    (https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/customize-openapi?view=aspnetcore-9.0#use-document-transformers)
+
 ```
 // Add security metadata to OpenApi document
         internal sealed class BearerSecuritySchemeTransformer(IAuthenticationSchemeProvider authenticationSchemeProvider) : IOpenApiDocumentTransformer
