@@ -88,6 +88,10 @@ namespace SampleOpenApi.Config
                 {
                     //options.AddDocument("v1");
                     options.AddDocument("v2");
+                    options.Authentication = new ScalarAuthenticationOptions
+                    {
+                        PreferredSecuritySchemes = ["Bearer"],
+                    };
                 });
             });
 

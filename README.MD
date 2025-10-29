@@ -58,6 +58,10 @@ if (app.Environment.IsDevelopment())
     {
         options.AddDocument("v2");
         //options.AddDocument("v1");
+        options.Authentication = new ScalarAuthenticationOptions 
+        {
+            PreferredSecuritySchemes = ["Bearer"], // select Bearer as default authentication scheme by default in UI
+        };
     });
 
     app.UseSwaggerUI(options =>
